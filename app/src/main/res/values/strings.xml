@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Appdev_Activity2</string>
+    <string name="txtMainTitle">Text View, EditText and Button</string>
+    <string name="colorbtn1">RED</string>
+    <string name="colorbtn2">BLUE</string>
+    <string name="colorbtn3">GREEN</string>
+    <string name="fontbtn1">Size34</string>
+    <string name="fontbtn2">Size24</string>
+    <string name="fontbtn3">Size20</string>
+    <string name="greet1">Hajimemashite</string>
+    <string name="greet2">Kawaii</string>
+    <string name="greet3">Senpai</string>
+    <string name="btnmain1">Send</string>
+
+</resources>

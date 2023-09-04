@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="73dp" />
+
+    <TextView
+        android:id="@+id/titleMainTxt"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/txtMainTitle"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_1"
+        android:layout_width="390dp"
+        android:layout_height="235dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="#F8F2F2"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="30dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/LnameTxt"
+                android:layout_width="240dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="Lastname"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.815"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/FnameTxt"
+                android:layout_width="243dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Firstname"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/LnameTxt"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/LnameTxt"
+                app:layout_constraintTop_toBottomOf="@+id/LnameTxt" />
+
+            <EditText
+                android:id="@+id/MnameTxt"
+                android:layout_width="241dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Middle Initial"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/FnameTxt"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/FnameTxt"
+                app:layout_constraintTop_toBottomOf="@+id/FnameTxt"
+                app:layout_constraintVertical_bias="0.214" />
+
+            <TextView
+                android:id="@+id/FnameLabel"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="28dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="Firstname:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/LnameLabel"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/LnameLabel"
+                app:layout_constraintTop_toBottomOf="@+id/LnameLabel" />
+
+            <TextView
+                android:id="@+id/LnameLabel"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="Lastname:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/LnameTxt"
+                app:layout_constraintHorizontal_bias="0.461"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/MILabel"
+                android:layout_width="113dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="Middle Initial:"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/FnameLabel"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/FnameLabel"
+                app:layout_constraintTop_toBottomOf="@+id/FnameLabel" />
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/btnmain1"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="13dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_2"
+        android:layout_width="390dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="30dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/outputTxt"
+                android:layout_width="334dp"
+                android:layout_height="122dp"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="18dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnColor1"
+            android:layout_width="125dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/colorbtn1"
+            app:layout_constraintEnd_toStartOf="@+id/btnColor2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnColor2"
+            android:layout_width="125dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="144dp"
+            android:text="@string/colorbtn2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.015" />
+
+        <Button
+            android:id="@+id/btnColor3"
+            android:layout_width="125dp"
+            android:layout_height="55dp"
+            android:text="@string/colorbtn3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnColor2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.015" />
+
+        <Button
+            android:id="@+id/btnFont1"
+            android:layout_width="125dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="72dp"
+            android:text="@string/fontbtn1"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnColor1"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/btnFont2"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="76dp"
+            android:text="@string/fontbtn2"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnFont3"
+            app:layout_constraintTop_toTopOf="@+id/btnColor2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnFont3"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="80dp"
+            android:text="@string/fontbtn3"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnColor3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txtGreetings1"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="@string/greet1"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnFont1" />
+
+        <TextView
+            android:id="@+id/txtGreetings2"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="@string/greet2"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/txtGreetings1" />
+
+        <TextView
+            android:id="@+id/txtGreetings3"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:shadowColor="@color/white"
+            android:text="@string/greet3"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toEndOf="@+id/txtGreetings2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
